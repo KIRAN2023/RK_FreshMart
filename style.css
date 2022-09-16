@@ -63,6 +63,7 @@ body {
     border-radius: 1rem;
     box-shadow: var(--shadowSupport);
     overflow: hidden;
+    border: 1px solid var(--heading);
 
 }
 
