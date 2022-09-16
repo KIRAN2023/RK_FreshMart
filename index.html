@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="index.js" defer>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Register | RK Fresh Mart</title>
+</head>
+
+<body>
+
+    <!-- ----------------------------------------REGISTRATION SECTION ----------------------------------------------------->
+
+    <div class="RegistrationDiv">
+        <div class="container">
+
+            <div class="header">
+                <h1>Create Account</h1>
+            </div>
+
+            <form action="" class="form" id="form">
+                <div class="grid grid-two-columns">
+                    <div class="form_fields">
+                        <label>User Name</label>
+                        <input type="text" id="username" placeholder="Enter your name" required>
+                       
+                    </div>
+                    <div class="form_fields">
+                        <label>Email</label>
+                        <input type="email" id="mailid" placeholder="Enter your Mail ID" required>
+                        
+                    </div>
+        
+                    <div class="form_fields">
+                        <label>Mobile Number</label>
+                        <input type="number" id="mobilenumber" placeholder="Enter your Mobile Number">
+                       
+                    </div>
+                    <div class="form_fields">
+                        <label>Date Of Birth</label>
+                        <input type="date" name="DOB" id="DOB">
+                    </div>
+                </div>
+                <div class="grid grid-three-columns">
+
+                    <div class="form_fields">
+                        <label>Gender</label>
+                        <select name="Gender" id="gender">
+                            <option value="none" selected disabled hidden>Choose Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+
+                    <div class="form_fields">
+                        <label>State</label>
+                        <select name="state" id="state">
+                            <option value="none" selected disabled hidden>Choose State</option>
+                            <option value="TN">Tamil Nadu</option>
+                            <option value="KA">Bengaluru</option>
+                            <option value="KL">Kerala</option>
+                            <option value="MH">Maharashtra</option>
+                        </select>
+                    </div>
+
+                    <div class="form_fields">
+                        <label>Category</label>
+                        <select name="state" id="state">
+                            <option value="none" selected disabled hidden>Choose Category</option>
+                            <option value="lifestyle">Life Style</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="household">Household Items</option>
+                            <option value="grocery">grocery</option>
+                        </select>
+                    </div>
+                   
+                </div>
+                
+               
+
+                <div class="grid grid-two-columns">
+                    <div class="form_fields">
+                        <label>City</label>
+                        <input type="text" placeholder="city">
+                    </div>
+                    <div class="form_fields">
+                        <label>Pincode</label>
+                        <input type="number" placeholder="Pincode">
+                    </div>
+                  
+                </div>
+                <div class="form_fields">
+                    <label>Address</label>
+                    <textarea name="Address" id="address" cols="10" rows="2"></textarea>
+                </div>
+                <div class="grid grid-two-columns">
+                    <div class="form_fields">
+                        <label>Password</label>
+                        <input type="password" id="password" class="passshow" placeholder="Enter Password" required>
+                        <i class="fa fa-eye" aria-hidden="true" onclick="showPassword()"></i>
+                    </div>
+                    <div class="form_fields">
+                        <label>Confirm Password</label>
+                        <input type="password" id="confirmpassword" class="passshow" placeholder="Enter Confirm Password" required>
+                        <i class="fa fa-eye" aria-hidden="true" onclick="showPassword()"></i>   
+                    </div>
+                </div>
+                <div class="btnD">
+                    <div class="grid grid-two-columns">
+                        <input type="button" value="Register" class="btn">
+                        <input type="reset" value="reset" class="btn">
+                    </div>
+                   
+
+                
+                <h4 style="text-align: center;">Already a user?</h4> <span>
+                <input type="button" value="Login" class="btn"></span>
+            </div>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
